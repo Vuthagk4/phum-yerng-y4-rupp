@@ -12,6 +12,11 @@ class HomeView extends GetView<HomeController> {
       appBar: AppBar(
         title: const Text('HomeView'),
         centerTitle: true,
+        actions: [
+          CircleAvatar(
+            child: Text("${controller.curentUser ?? "guest"}"),
+          )
+        ],
       ),
       body: const Center(
         child: Text(
