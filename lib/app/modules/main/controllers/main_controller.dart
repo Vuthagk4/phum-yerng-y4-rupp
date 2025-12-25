@@ -4,8 +4,8 @@ import 'package:phumyerng_ecommerce_rupp/app/modules/cart/bindings/cart_binding.
 import 'package:phumyerng_ecommerce_rupp/app/modules/cart/views/cart_view.dart';
 import 'package:phumyerng_ecommerce_rupp/app/modules/edit-profile/bindings/edit_profile_binding.dart';
 import 'package:phumyerng_ecommerce_rupp/app/modules/edit-profile/views/edit_profile_view.dart';
-import 'package:phumyerng_ecommerce_rupp/app/modules/home/bindings/home_binding.dart';
-import 'package:phumyerng_ecommerce_rupp/app/modules/home/views/home_view.dart';
+import 'package:phumyerng_ecommerce_rupp/app/modules/products/home/bindings/home_binding.dart';
+import 'package:phumyerng_ecommerce_rupp/app/modules/products/home/views/home_view.dart';
 import 'package:phumyerng_ecommerce_rupp/app/modules/profile/bindings/profile_binding.dart';
 import 'package:phumyerng_ecommerce_rupp/app/modules/profile/views/profile_view.dart';
 import 'package:phumyerng_ecommerce_rupp/app/modules/search_product/bindings/search_product_binding.dart';

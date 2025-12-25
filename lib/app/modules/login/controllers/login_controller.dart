@@ -23,7 +23,7 @@ class LoginController extends GetxController {
         final user = response.data['user'];
         await StorageService.write(key: 'token', value: token);
         await StorageService.write(key: 'user', value: jsonEncode(user));
-        Get.offNamed(Routes.HOME);
+        Get.offAllNamed(Routes.MAIN);
       }
       else{
         Get.defaultDialog(

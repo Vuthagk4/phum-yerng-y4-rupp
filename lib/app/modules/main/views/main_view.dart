@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
+import 'package:phumyerng_ecommerce_rupp/app/routes/app_pages.dart';
 
 import '../controllers/main_controller.dart';
 
@@ -9,11 +10,11 @@ class MainView extends GetView<MainController> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('MainView'),
-        centerTitle: true,
-      ),
-      body: Container(),
+        body: Navigator(
+          key: Get.nestedKey(1),
+          initialRoute: Routes.HOME,
+          onGenerateRoute: controller.onGenerateRoute,
+        ),
         bottomNavigationBar: Obx(
               () => BottomNavigationBar(
               currentIndex: controller.currentIndex.value,

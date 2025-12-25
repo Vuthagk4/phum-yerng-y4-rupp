@@ -1,8 +1,7 @@
 import 'dart:io';
 
 import 'package:dio/dio.dart';
-
-import '../../constant/constant.dart';
+import 'package:phumyerng_ecommerce_rupp/app/constant.dart';
 
 class ApiProvider {
   //Using Dio to talk with API
@@ -65,10 +64,7 @@ class ApiProvider {
     }
   }
 
-  Future<Response> getProducts({
-    required String email,
-    required String password,
-  }) async {
+  Future<Response> getProducts() async {
     try {
       return await _dio.get("/products");
     } catch (e) {
